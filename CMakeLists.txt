@@ -6,3 +6,5 @@ project(fort_windows_linux
 add_executable(print_hello_from_c)
 add_subdirectory(src)
 
+enable_testing()
+add_test(NAME run_test COMMAND print_hello_from_c)
